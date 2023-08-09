@@ -74,7 +74,7 @@ function findLastEvenNumber(arr) {
   if (!Array.isArray(arr)) {
     return "Вхідний параметр має бути масивом";
   }
-  const found = arr.findLast((element) => element % 2);
+  const found = arr.findLast((element) => element % 2 === 0);
   if (found) {
     return found;
   } else {
